@@ -1,0 +1,29 @@
+/* Variables*/   
+
+$color-blue:  rgb(15, 15, 129);
+$color-grey: rgba(146, 141, 141, 0.493);
+
+/* imagen ig*/   
+
+.img-ig{
+    width: 20px;
+   
+}
+/* operaciones*/   
+
+$padding:20px;
+
+/* hover*/   
+
+.serie_hover{
+    &:hover { color: white;} 
+}
+/* mixing*/   
+
+@mixin description {
+    background-color:white; 
+    width: 50%;
+    top: 0px;
+    justify-content: center;
+    
+}

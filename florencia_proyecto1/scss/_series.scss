@@ -1,0 +1,90 @@
+@import"componentes";
+
+/* Series*/
+    .section_series{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5 auto;
+      
+   
+
+        .serie_photo_size2{
+                width: 360px;
+                transition: transform .2s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+        }
+        .serie_photo_size1{
+            width: 360px;
+            transition: transform .2s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .h2_series{
+            width: 300px;
+            font-size: 50px;
+            padding: $padding+10;
+        }
+        .serie_photo_size3{
+            width: 360px;
+            margin: 5px;
+            transition: transform .2s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        } 
+   
+    } 
+    @media (max-width: 768px ){
+            
+       
+         /* Series oculto mobile*/
+         .serie_photo_size3{
+            display: none;}
+
+    }
+    @media (min-width: 1024px ){
+         /* Series*/
+         .section_series{
+            display: grid;
+            grid-template-columns: 3 fr;
+            grid-template-rows: 5 auto;
+            grid-row-gap: 30px;
+            grid-column-gap: 50px;
+            margin-left: 60px;
+    
+            .serie_photo_size3{
+                width: 360px;
+                margin: 5px;
+                transition: transform .2s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }   
+            .serie_photo_size2{
+                width: 360px;
+                margin: 5px;
+                transition: transform .2s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }   
+            .serie_photo_size1{
+                width: 360px;
+                margin: 5px;
+                transition: transform .2s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+            .h2_series{
+                width: 280px;
+                font-size: 48px;
+                padding: $padding;
+                background-color: $color-grey;
+                position: absolute;
+            }
+        }
+    }

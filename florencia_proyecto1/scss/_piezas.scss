@@ -1,0 +1,55 @@
+@import"componentes";
+
+.h2_piezas_n{
+    font-size: 45px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+@media (max-width: 768px ){
+     /* Piezas oculto mobile*/
+     .piezas_desc{
+        display: none;
+    }
+    .pieza_img1{
+        display: none;
+    }  
+}
+@media (min-width: 1024px){
+    .h2_piezas_n{
+        font-size: 50px;
+        width: 380px;
+        height: 100px;
+        padding:$padding;
+        margin-bottom: 40px;
+    }
+    .h2_piezas_n1{
+        font-size: 50px;
+        width: 380px;
+        height: 100px;
+        padding-left: 20px;
+        margin-top: 40px;
+    }
+    
+  
+    .piezas_desc{
+        position: absolute;
+        background-color:$color-grey;
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-bottom: 40px;
+        width: 280px;
+        
+            .piezas_t{
+                font-size: 20px;
+                &:hover{
+                    color: white;
+                }
+        
+            }
+            .piezas_p{
+                font-size: 12px;
+                margin-top: 5px;
+            }
+    }
+  
+}

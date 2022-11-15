@@ -1,0 +1,48 @@
+@import"componentes";
+
+/* cups mobile y tablet*/   
+
+.cups_t{
+    font-size: 50px;
+}
+.cups_d{
+    font-size: 12px;
+    width: 250px;
+    margin-top: 5px;
+}
+
+.cup_name{
+    font-size: 15px;
+    position: absolute;
+    padding-top: 20px;
+    padding-left: 25px;
+    
+}
+@media (min-width: 1024px ){
+   
+     /*cups desktop*/   
+        
+    .cups_t{
+        font-size: 50px;
+        padding-top: 100px;
+        padding-left: 10px;     
+    }
+    .cups_d{
+        font-size: 14px;
+        width: 400px;
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+    .cup_name{
+        position:absolute;
+        padding-top: 190px;
+        padding-left: 15px;
+        background-color: $color-grey;
+        font-size: 18px;
+        color: black;
+        &:hover{
+            color: white;
+        }
+    
+    }
+}
